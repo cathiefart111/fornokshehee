@@ -138,7 +138,7 @@ function detectBlow() {
   const lowAvg = lowFreqSum / (dataArray.length / 2);
   const ratio = highAvg / (lowAvg + 1);
 
-  const BLOW_RATIO_THRESHOLD = 0.08; // slightly higher for mobile noise
+  const BLOW_RATIO_THRESHOLD = 0.02; // slightly higher for mobile noise
 
   if (ratio > BLOW_RATIO_THRESHOLD && !blown) {
     blown = true;
@@ -187,4 +187,5 @@ if (micBtn) {
 }
     </script>
   </body>
+
 </html>
