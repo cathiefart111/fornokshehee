@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <button id="micBtn">🎤 Tap here first and blow the candles loser</button>
+      <button id="micBtn">🎤 ok tap right here first loser</button>
       <div id="birthdayText"></div>
       <div class="cake-container">
         <div class="cake" id="cake"></div>
@@ -138,7 +138,7 @@ function detectBlow() {
   const lowAvg = lowFreqSum / (dataArray.length / 2);
   const ratio = highAvg / (lowAvg + 1);
 
-  const BLOW_RATIO_THRESHOLD = 0.02; // slightly higher for mobile noise
+  const BLOW_RATIO_THRESHOLD = 0.009; // slightly higher for mobile noise
 
   if (ratio > BLOW_RATIO_THRESHOLD && !blown) {
     blown = true;
@@ -189,4 +189,5 @@ if (micBtn) {
   </body>
 
 </html>
+
 
